@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container {
+        display: grid;
+        border: black 1px solid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50% 10% 10% 30% 40%;
+        grid-template-areas: 
+        "header header header "
+        "name name name "
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+    }
+
+    .header {
+        grid-area: header;
+        background: blanchedalmond;
+    }
+    .name {
+        grid-area: name;
+        background: burlywood;
+    }
+    .main {
+        grid-area: main;
+        background: chocolate;
+    }
+    .nav {
+        grid-area: nav;
+        background: coral;
+    }
+    .footer {
+        grid-area: footer;
+        background: darkgray;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+    <header class="header">
+        <p>Chat with us</p>
+        <p>+420 336 775 664</p>
+        <a href="mailto:test@mail.ru">info@freshnesecom.com</a>
+
+            <p>Blog</p>
+            <p>About us</p>
+            <p>Careers</p>
+        <p>Freshnesecom</p>
+        <select>
+            <option value="first option">All categories</option>
+            <option value="second option">Опция 2</option>
+            <option value="third option">Опция 3</option>
+            <input type="text" value="Search products, categories ...">
+        </select>
+    </header>
+
+    <nav class="nav">
+        Bakery
+        Fruit and vegetables
+        Meat and fish
+        Drinks
+        Kitchen
+        Special nutrition
+        Baby
+        Pharmacy
+    </nav>
+
+<main class="main">kjg;k</main>
+<footer class="footer">ljhg;kl</footer>
+
+
+
+    </div>
+</body>
+</html>
